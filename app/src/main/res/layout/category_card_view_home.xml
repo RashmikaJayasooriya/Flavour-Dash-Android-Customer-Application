@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="10dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cardCategoryName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="@string/textview"
+            android:textSize="20sp"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="19dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cardCategoryViewAllBtn"
+            style="@style/Widget.Material3.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:paddingRight="0dp"
+            android:text="@string/view_all"
+            android:textAlignment="viewEnd"
+            android:visibility="gone"
+            app:icon="@drawable/baseline_arrow_right_alt_24"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconSize="29dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cardCategoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedImageView" parent="TextAppearance.AppCompat">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+    </style>
+    <style name="singleViewBack" parent="TextAppearance.AppCompat">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">360dp</item>
+    </style>
+</resources>

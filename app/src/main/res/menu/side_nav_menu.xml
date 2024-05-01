@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/sideNavHome"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        android:checked="true"/>
+    <item
+        android:id="@+id/sideNavCart"
+        android:icon="@drawable/baseline_shopping_cart_checkout_24"
+        android:title="Cart"/>
+    <item
+        android:id="@+id/sideNavOrders"
+        android:icon="@drawable/order"
+        android:title="Current Orders"/>
+    <item
+        android:id="@+id/sideNavOrderHistory"
+        android:icon="@drawable/baseline_history_24"
+        android:title="Order History"/>
+    <item
+        android:id="@+id/sideNavProfile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="My Profile"/>
+    <item
+        android:id="@+id/sideNavLocation"
+        android:icon="@drawable/baseline_share_location_24"
+        android:title="Branch Locations"/>
+    <item
+        android:id="@+id/sideNavSupportCall"
+        android:icon="@drawable/baseline_add_ic_call_24"
+        android:title="Support Call"/>
+
+    <group android:id="@+id/sideNavGroupAuth">
+        <item
+            android:id="@+id/sideNavLogout"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="Log Out"
+            android:visible="true"/>
+    </group>
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RadioGroup
+        android:id="@+id/sortRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioAToZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/name_a_z"
+            app:useMaterialThemeColors="true"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioZToA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/name_z_a"
+            app:useMaterialThemeColors="true" />
+
+        <RadioButton
+            android:id="@+id/radioHighToLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/price_high_to_low"
+            app:useMaterialThemeColors="true" />
+
+        <RadioButton
+            android:id="@+id/radioLowToHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/name_low_to_high"
+            app:useMaterialThemeColors="true" />
+
+        <RadioButton
+            android:id="@+id/radioCategoryAToZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/category_a_z"
+            app:useMaterialThemeColors="true" />
+        <RadioButton
+            android:id="@+id/radioSubCategoryAToZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/sub_category_a_z"
+            app:useMaterialThemeColors="true" />
+    </RadioGroup>
+</androidx.appcompat.widget.LinearLayoutCompat>

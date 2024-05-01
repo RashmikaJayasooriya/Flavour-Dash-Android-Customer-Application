@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_flavour_dash_launcher_1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_flavour_dash_launcher_1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlavourDash"
+        tools:targetApi="31">
+        <activity
+            android:name=".UserGeneralDetailsUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartedActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPasswordUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserMobileNumberUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserEmailUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliverLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SingleDishViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- <receiver -->
+        <!-- android:name=".MySMSBroadcastReceiver" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission="com.google.android.gms.auth.api.phone.permission.SEND"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="***" />
+    </application>
+
+</manifest>
