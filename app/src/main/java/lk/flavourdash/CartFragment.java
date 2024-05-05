@@ -68,7 +68,7 @@ public class CartFragment extends Fragment implements OnItemClickListener<CartIt
     private String selectedAddress;
     private TextView estimatedTimeView;
     private LatLng nearestBranch = null;
-    private static final String API_KEY = "AIzaSyDVPd1-bmrSDjSwbjdpfZoR3wl-HQnIxCw";
+    private static final String API_KEY = "***";
 
 
     @Override
